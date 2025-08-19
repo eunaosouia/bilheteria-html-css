@@ -13,7 +13,7 @@
 
 /* RESET E BODY */
 body {
-    background: var(--bg-color);
+    background: linear-gradient(135deg, #e0e3e8 0%, #a3a8b0 60%, #44474f 100%);
     color: var(--text-color);
     min-height: 100vh;
     margin: 0;
@@ -28,8 +28,8 @@ body {
 /* HEADER FIXO */
 .main-header {
     width: 100%;
-    background: var(--container-bg);
-    box-shadow: 0 2px 8px var(--primary);
+    background: #44474f;
+    box-shadow: none;
     padding: 12px 0;
     position: fixed;
     top: 0;
@@ -45,7 +45,7 @@ body {
 }
 
 .main-header a {
-    color: var(--primary);
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
@@ -53,8 +53,8 @@ body {
 }
 
 .main-header a:hover {
-    color: var(--text-color);
-    text-shadow: 0 0 6px var(--primary);
+    color: #e0e3e8;
+    text-shadow: none;
 }
 
 /* CONTAINER CENTRALIZADO */
