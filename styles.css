@@ -13,7 +13,7 @@
 
 /* RESET E BODY */
 body {
-    background: linear-gradient(135deg, #e0e3e8 0%, #a3a8b0 60%, #44474f 100%);
+    background: var(--bg-color);
     color: var(--text-color);
     min-height: 100vh;
     margin: 0;
