@@ -11,7 +11,7 @@
 
 /* RESET E BODY */
 body {
-    background: var(--bg-color);
+    background: linear-gradient(135deg, #222 0%, #111 60%, #444 100%);
     color: var(--text-color);
     display: flex;
     flex-direction: column;
@@ -22,7 +22,6 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     padding-top: 60px; /* Espaço para header fixo */
 }
-
 /* HEADER FIXO */
 .main-header {
     width: 100%;
@@ -253,4 +252,13 @@ form .event-btn,
 form .checkout-btn {
     width: 100%;
     box-sizing: border-box;
+}
+
+.cadastro-link {
+    color: var(--neon-blue);
+    text-decoration: none;
+}
+
+.cadastro-link:hover {
+    text-decoration: underline;
 }
