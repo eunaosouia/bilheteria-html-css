@@ -6,26 +6,29 @@
     <title>Pagamento</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<header class="main-header">
-    <nav>
-        <a href="home.html">Eventos</a>
-        <a href="carrinho.html">Carrinho</a>
-        <a href="meusIngressos.html">Meus Ingressos</a>
-        <a href="perfil.html">Perfil</a>
-        <a href="index.html">Sair</a>
-    </nav>
-</header>
 <body>
-    <form>
-        <p>Nome no cartão</p>
-        <input type="text" placeholder="Nome completo">
-        <p>Número do cartão</p>
-        <input type="text" placeholder="XXXX XXXX XXXX XXXX">
-        <p>Validade</p>
-        <input type="text" placeholder="MM/AA">
-        <p>Código de segurança</p>
-        <input type="text" placeholder="CVV">
-        <a href="obrigado.html" class="login-btn">Pagar</a>
-    </form>
+    <header class="main-header">
+        <nav>
+            <a href="home.html">Eventos</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="meusIngressos.html">Meus Ingressos</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="index.html">Sair</a>
+        </nav>
+    </header>
+    <div class="login-container">
+        <form class="login-form">
+            <p class="login-title">Pagamento</p>
+            <label for="nome-cartao">Nome no cartão</label>
+            <input type="text" id="nome-cartao" placeholder="Nome completo" required>
+            <label for="numero-cartao">Número do cartão</label>
+            <input type="text" id="numero-cartao" placeholder="XXXX XXXX XXXX XXXX" required>
+            <label for="validade">Validade</label>
+            <input type="text" id="validade" placeholder="MM/AA" required>
+            <label for="cvv">Código de segurança</label>
+            <input type="text" id="cvv" placeholder="CVV" required>
+            <a href="obrigado.html" class="login-btn">Pagar</a>
+        </form>
+    </div>
 </body>
 </html>

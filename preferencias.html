@@ -6,24 +6,27 @@
     <title>Preferências</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
-<header class="main-header">
-    <nav>
-        <a href="home.html">Eventos</a>
-        <a href="carrinho.html">Carrinho</a>
-        <a href="meusIngressos.html">Meus Ingressos</a>
-        <a href="perfil.html">Perfil</a>
-        <a href="index.html">Sair</a>
-    </nav>
-</header>
-
 <body>
-    <form>
-        <p>Notificações por e-mail</p>
-        <input type="checkbox" checked>
-        <p>Tipo de evento favorito</p>
-        <input type="text" placeholder="Ex: Shows, Teatro...">
-        <a href="perfil.html" class="login-btn">Salvar</a>
-    </form>
+    <header class="main-header">
+        <nav>
+            <a href="home.html">Eventos</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="meusIngressos.html">Meus Ingressos</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="index.html">Sair</a>
+        </nav>
+    </header>
+    <div class="login-container">
+        <form class="login-form">
+            <p class="login-title">Preferências</p>
+            <label>
+                <input type="checkbox" checked>
+                Notificações por e-mail
+            </label>
+            <label for="favorito">Tipo de evento favorito</label>
+            <input type="text" id="favorito" placeholder="Ex: Shows, Teatro...">
+            <a href="perfil.html" class="login-btn">Salvar</a>
+        </form>
+    </div>
 </body>
 </html>

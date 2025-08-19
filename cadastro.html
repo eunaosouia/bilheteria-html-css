@@ -7,27 +7,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="main-header">
-        <nav>
-            <a href="home.html">Eventos</a>
-            <a href="carrinho.html">Carrinho</a>
-            <a href="meusIngressos.html">Meus Ingressos</a>
-            <a href="perfil.html">Perfil</a>
-            <a href="index.html">Sair</a>
-        </nav>
-    </header>
-    <form>
-        <p>Nome Completo</p>
-        <input type="text" placeholder="Digite seu nome completo" required>
-        <p>E-mail</p>
-        <input type="text" placeholder="Digite seu e-mail" required>
-        <p>Usuário</p>
-        <input type="text" placeholder="Escolha um nome de usuário" required>
-        <p>Senha</p>
-        <input type="password" placeholder="Crie uma senha" required>
-        <p>Confirmar Senha</p>
-        <input type="password" placeholder="Confirme sua senha" required>
-        <a href="login.html" class="login-btn">Cadastrar</a>
-    </form>
+    <div class="login-container">
+        <form class="login-form">
+            <p class="login-title">Crie sua conta</p>
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+            <label for="email">E-mail</label>
+            <input type="text" id="email" placeholder="Digite seu e-mail" required>
+            <label for="usuario">Usuário</label>
+            <input type="text" id="usuario" placeholder="Escolha um nome de usuário" required>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="Crie uma senha" required>
+            <label for="confirmar">Confirmar Senha</label>
+            <input type="password" id="confirmar" placeholder="Confirme sua senha" required>
+            <a href="index.html" class="login-btn">Cadastrar</a>
+            <div class="cadastro-area">
+                <span>Já tem uma conta?</span>
+                <a href="index.html" class="cadastro-link">Faça login</a>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
