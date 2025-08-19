@@ -1,0 +1,256 @@
+/* PALETA DE CORES E VARIÁVEIS */
+:root {
+    --bg-color: #111;
+    --neon-blue: #00ffff;
+    --text-color: #fff;
+    --input-bg: #222;
+    --input-border: #00ffff;
+    --button-bg: #00ffff;
+    --button-text: #111;
+}
+
+/* RESET E BODY */
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    padding-top: 60px; /* Espaço para header fixo */
+}
+
+/* HEADER FIXO */
+.main-header {
+    width: 100%;
+    background: var(--bg-color);
+    box-shadow: 0 2px 8px var(--neon-blue);
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.main-header nav {
+    display: flex;
+    gap: 32px;
+}
+
+.main-header a {
+    color: var(--neon-blue);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+.main-header a:hover {
+    color: #fff;
+    text-shadow: 0 0 6px var(--neon-blue);
+}
+
+/* FORMULÁRIOS */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+    background: rgba(34, 34, 34, 0.85);
+    padding: 32px 24px;
+    border-radius: 16px;
+    box-shadow: 0 0 6px var(--neon-blue);
+}
+
+form p {
+    text-align: center;
+    margin-bottom: 1px;
+    color: var(--neon-blue);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+input[type="text"],
+input[type="password"] {
+    background: var(--input-bg);
+    border: 2px solid var(--input-border);
+    border-radius: 8px;
+    color: var(--text-color);
+    padding: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: var(--neon-blue);
+    box-shadow: 0 0 6px var(--neon-blue);
+}
+
+/* BOTÕES GERAIS */
+button[type="submit"],
+.login-btn,
+.event-btn,
+.checkout-btn {
+    background: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 6px var(--neon-blue);
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover,
+.login-btn:hover,
+.event-btn:hover,
+.checkout-btn:hover {
+    background: var(--bg-color);
+    color: var(--neon-blue);
+    border: 2px solid var(--neon-blue);
+    text-align: center;
+}
+
+/* EVENTOS */
+.event-title {
+    color: var(--neon-blue);
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.event-list {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.event-card {
+    background: rgba(34,34,34,0.85);
+    border-radius: 16px;
+    box-shadow: 0 0 6px var(--neon-blue); /* Borda neon fina */
+    padding: 24px;
+    width: 260px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-card h2 {
+    color: var(--neon-blue);
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+.event-card p {
+    color: #fff;
+    margin: 4px 0;
+}
+
+/* CARRINHO */
+.cart-container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    padding: 32px 24px;
+    width: 350px;
+    max-width: 90vw;
+    color: #222;
+}
+
+.cart-title {
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 24px;
+    color: #222;
+    letter-spacing: 1px;
+}
+
+.cart-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: #f7f7f7;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.event-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.event-date,
+.event-location {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.remove-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #eee;
+    color: #d00;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.remove-btn:hover {
+    background: #ffdada;
+}
+
+/* BOTÃO PAGAMENTO NO CARRINHO */
+.checkout-btn {
+    background: #00bfff;
+    color: #fff;
+    box-shadow: 0 0 8px #00bfff44;
+    margin-top: 16px;
+}
+
+.checkout-btn:hover {
+    background: #0080ff;
+    color: #fff;
+    border: none;
+}
+
+form input[type="text"],
+form input[type="password"],
+form button[type="submit"],
+form .login-btn,
+form .event-btn,
+form .checkout-btn {
+    width: 100%;
+    box-sizing: border-box;
+}
