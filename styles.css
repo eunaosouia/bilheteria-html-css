@@ -11,17 +11,16 @@
 
 /* RESET E BODY */
 body {
-    background: linear-gradient(135deg, #222 0%, #111 60%, #444 100%);
-    color: var(--text-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background: #232c3a;
+    color: #fff;
     min-height: 100vh;
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    padding-top: 60px; /* Espaço para header fixo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 /* HEADER FIXO */
 .main-header {
     width: 100%;
@@ -52,6 +51,139 @@ body {
 .main-header a:hover {
     color: #fff;
     text-shadow: 0 0 6px var(--neon-blue);
+}
+
+/* Container do login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Formulário de login */
+.login-form {
+    background: #1a2232;
+    padding: 32px 28px;
+    border-radius: 8px;
+    box-shadow: 0 2px 16px #0006;
+    display: flex;
+    flex-direction: column;
+    min-width: 340px;
+    gap: 14px;
+}
+
+.login-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.login-form label {
+    font-size: 1rem;
+    color: #bfc8da;
+    margin-bottom: 2px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    background: #232c3a;
+    border: 1px solid #3b4a67;
+    border-radius: 4px;
+    color: #fff;
+    padding: 8px;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    border-color: #00bfff;
+    outline: none;
+}
+
+.auth-method {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.95rem;
+    color: #bfc8da;
+    margin-bottom: 8px;
+}
+
+.auth-method span {
+    margin-right: 8px;
+    color: #bfc8da;
+}
+
+.auth-method label {
+    font-size: 0.95rem;
+    color: #bfc8da;
+    margin-right: 8px;
+}
+
+.login-btn {
+    background: #00bfff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 8px #00bfff44;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 8px;
+    transition: background 0.2s;
+    width: 100%;
+    display: block;
+}
+
+.login-btn:hover {
+    background: #0080ff;
+}
+
+.login-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 8px;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.login-links a {
+    color: #bfc8da;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.login-links a:hover {
+    color: #00bfff;
+}
+
+.cadastro-area {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+.cadastro-link {
+    color: #00bfff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 4px;
+    transition: color 0.2s;
+}
+
+.cadastro-link:hover {
+    color: #fff;
 }
 
 /* FORMULÁRIOS */
